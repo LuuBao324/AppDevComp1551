@@ -22,6 +22,8 @@ namespace CourseWork
 
         private void playGameBtn_Click(object sender, EventArgs e) {
             
+            bool playAgain = true;
+            while (playAgain) { 
             var dataAccess = new QuizDataAccess(connectionString);
             quizManager.questionList.Clear();
             quizManager.questionList.AddRange(dataAccess.LoadQuestionsFromDatabase());
@@ -35,6 +37,14 @@ namespace CourseWork
             }
             PlayQuizForm.ShowDialog();
 
+            // After the quiz ends
+            var resultForm = new ResultForm(quizManager.UserAnswers);
+            var dialogResult = resultForm.ShowDialog();
+
+            playAgain = resultForm.playAgain;
+            quizManager.UserAnswers.Clear();
+            quizManager.StartQuiz();
+            }
         }
     }
 }

@@ -99,10 +99,10 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe Print", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(384, 26);
+            label2.Font = new Font("Segoe Print", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(369, 24);
             label2.Name = "label2";
-            label2.Size = new Size(201, 54);
+            label2.Size = new Size(248, 65);
             label2.TabIndex = 11;
             label2.Text = "Create Quiz";
             // 

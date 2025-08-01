@@ -19,8 +19,6 @@ namespace CourseWork {
 
         public override string getCorrectAnswer() => string.Join(" / ", AcceptableAnswers);
 
-        //public override string ToString() {
-        //    return $"{base.ToString()} - Answers: {string.Join(", ", AcceptableAnswers)}";
-        //}
+       
     }
 }

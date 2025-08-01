@@ -183,7 +183,7 @@
             // 
             labelClock.AutoSize = true;
             labelClock.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelClock.Location = new Point(680, 49);
+            labelClock.Location = new Point(615, 39);
             labelClock.Name = "labelClock";
             labelClock.Size = new Size(89, 38);
             labelClock.TabIndex = 6;
@@ -194,7 +194,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cyan;
-            ClientSize = new Size(833, 468);
+            ClientSize = new Size(740, 455);
             Controls.Add(labelClock);
             Controls.Add(labelQuestionText);
             Controls.Add(panelOpAnswer);

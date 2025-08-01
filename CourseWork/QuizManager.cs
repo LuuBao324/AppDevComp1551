@@ -25,9 +25,9 @@ namespace CourseWork {
                 return null;
             }
 
-            public bool SubmitAnswer(string userAnswer) {
+            public bool SubmitAnswer(string userAnswer, string displayAnswer = null) {
                 var question = GetCurrentQuestion();
-                UserAnswers.Add((question, userAnswer));
+                UserAnswers.Add((question, displayAnswer ?? userAnswer));
                 if (question == null) return false;
                 bool correct = question.checkAnswer(userAnswer);
                 if (correct) score++;

@@ -25,9 +25,5 @@ namespace CourseWork {
         public override string getCorrectAnswer() {
             return IsTrue ? "True" : "False";
         }
-
-        //public override string ToString() {
-        //    return $"{base.ToString()} - Correct Answer: {getCorrectAnswer()}";
-        //}
     }
 }

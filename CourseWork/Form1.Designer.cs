@@ -36,7 +36,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe Print", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(334, 79);
+            label1.Location = new Point(237, 41);
             label1.Name = "label1";
             label1.Size = new Size(248, 71);
             label1.TabIndex = 0;
@@ -45,18 +45,18 @@
             // createQuizBtn
             // 
             createQuizBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            createQuizBtn.Location = new Point(235, 210);
+            createQuizBtn.Location = new Point(133, 152);
             createQuizBtn.Name = "createQuizBtn";
             createQuizBtn.Size = new Size(177, 59);
             createQuizBtn.TabIndex = 1;
-            createQuizBtn.Text = "Create Quiz";
+            createQuizBtn.Text = "Manage Quiz";
             createQuizBtn.UseVisualStyleBackColor = true;
             createQuizBtn.Click += createQuizBtn_Click;
             // 
             // playGameBtn
             // 
             playGameBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            playGameBtn.Location = new Point(504, 210);
+            playGameBtn.Location = new Point(396, 152);
             playGameBtn.Name = "playGameBtn";
             playGameBtn.Size = new Size(175, 59);
             playGameBtn.TabIndex = 2;
@@ -69,7 +69,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Cyan;
-            ClientSize = new Size(956, 525);
+            ClientSize = new Size(724, 375);
             Controls.Add(playGameBtn);
             Controls.Add(createQuizBtn);
             Controls.Add(label1);

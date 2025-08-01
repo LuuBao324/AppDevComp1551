@@ -82,7 +82,8 @@ namespace CourseWork {
 
             if (currentQuestion is MultipleChoiceQuestion multiQuestion) {
                 string selectedAnswer = multiQuestion.Options[buttonTag];
-                quizManager.SubmitAnswer(selectedAnswer);
+                char answerChar = (char)('A' + buttonTag); // Convert index to A, B, C, D
+                quizManager.SubmitAnswer(answerChar.ToString(), selectedAnswer);
                 questionTimer.Stop();
                 LoadCurrentQuestion();
             }
@@ -133,8 +134,6 @@ namespace CourseWork {
             string formattedTime = $"{minutes:D2}:{seconds:D2}";
             MessageBox.Show($"Quiz completed! \n Your score: {quizManager.score} \n Time to finish: {formattedTime}");
 
-            var summaryForm = new ResultForm(quizManager.UserAnswers);
-            summaryForm.ShowDialog();
             this.Close();
         }
 
