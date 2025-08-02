@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResultForm));
             dataGridViewSummary = new DataGridView();
             label1 = new Label();
             buttonPlayAgain = new Button();
@@ -87,6 +88,7 @@
             Controls.Add(buttonPlayAgain);
             Controls.Add(label1);
             Controls.Add(dataGridViewSummary);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ResultForm";
             Text = "ResultForm";
             ((System.ComponentModel.ISupportInitialize)dataGridViewSummary).EndInit();

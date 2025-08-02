@@ -6,5 +6,4 @@ CREATE TABLE Questions (
     QuestionType NVARCHAR(50) NOT NULL,
     CorrectAnswer NVARCHAR(255) NOT NULL,
     AnswerOptions NVARCHAR(255),
-    Category NVARCHAR(50)
 );

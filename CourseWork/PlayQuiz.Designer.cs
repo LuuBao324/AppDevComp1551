@@ -24,6 +24,7 @@
         /// </summary>
         private void InitializeComponent() {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayQuiz));
             questionTimer_Tick = new System.Windows.Forms.Timer(components);
             panelMultiAnswer = new Panel();
             button4 = new Button();
@@ -171,11 +172,12 @@
             // 
             // labelQuestionText
             // 
+            labelQuestionText.AllowDrop = true;
             labelQuestionText.AutoSize = true;
-            labelQuestionText.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelQuestionText.Location = new Point(100, 39);
+            labelQuestionText.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelQuestionText.Location = new Point(89, 33);
             labelQuestionText.Name = "labelQuestionText";
-            labelQuestionText.Size = new Size(182, 29);
+            labelQuestionText.Size = new Size(151, 25);
             labelQuestionText.TabIndex = 5;
             labelQuestionText.Text = "Question Here";
             // 
@@ -183,7 +185,7 @@
             // 
             labelClock.AutoSize = true;
             labelClock.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelClock.Location = new Point(615, 39);
+            labelClock.Location = new Point(625, 23);
             labelClock.Name = "labelClock";
             labelClock.Size = new Size(89, 38);
             labelClock.TabIndex = 6;
@@ -200,6 +202,7 @@
             Controls.Add(panelOpAnswer);
             Controls.Add(panelTFAnswer);
             Controls.Add(panelMultiAnswer);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "PlayQuiz";
             Text = "PlayQuiz";
             panelMultiAnswer.ResumeLayout(false);

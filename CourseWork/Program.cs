@@ -12,7 +12,7 @@ namespace CourseWork
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             var quizManager = new QuizManager();
-            Application.Run(new Form1(quizManager));
+            Application.Run(new MainForm(quizManager));
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CourseWork
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -27,6 +27,7 @@
         ///  the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             label1 = new Label();
             createQuizBtn = new Button();
             playGameBtn = new Button();
@@ -64,7 +65,7 @@
             playGameBtn.UseVisualStyleBackColor = true;
             playGameBtn.Click += playGameBtn_Click;
             // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -73,7 +74,8 @@
             Controls.Add(playGameBtn);
             Controls.Add(createQuizBtn);
             Controls.Add(label1);
-            Name = "Form1";
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Name = "MainForm";
             Text = "Quiz Game";
             ResumeLayout(false);
             PerformLayout();

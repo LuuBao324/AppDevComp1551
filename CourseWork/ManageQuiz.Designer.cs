@@ -1,5 +1,5 @@
 ﻿namespace CourseWork {
-    partial class CreateQuiz {
+    partial class ManageQuiz {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageQuiz));
             openEndedPanel = new Panel();
             textBoxOpenEnded = new TextBox();
             buttonCreate = new Button();
@@ -102,9 +103,9 @@
             label2.Font = new Font("Segoe Print", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(369, 24);
             label2.Name = "label2";
-            label2.Size = new Size(248, 65);
+            label2.Size = new Size(269, 65);
             label2.TabIndex = 11;
-            label2.Text = "Create Quiz";
+            label2.Text = "Manage Quiz";
             // 
             // trueFalsePanel
             // 
@@ -267,8 +268,9 @@
             Controls.Add(cbBoxQuesionType);
             Controls.Add(label2);
             Controls.Add(textBoxQuestion);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "CreateQuiz";
-            Text = "CreateQuiz";
+            Text = "ManageQuiz";
             Load += CreateQuiz_Load;
             openEndedPanel.ResumeLayout(false);
             openEndedPanel.PerformLayout();

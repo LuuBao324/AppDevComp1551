@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace CourseWork {
 
-    public partial class CreateQuiz : Form {
+    public partial class ManageQuiz : Form {
 
         
         private QuizManager quizManager;
@@ -19,7 +19,7 @@ namespace CourseWork {
                                            "Trusted_Connection=True; Trust Server Certificate=True;" + 
                                             "User Id=admin, Password= ";
         private QuizDataAccess dataAccess;
-        public CreateQuiz(QuizManager quizM) {
+        public ManageQuiz(QuizManager quizM) {
             InitializeComponent();
 
             quizManager = quizM;
